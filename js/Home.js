@@ -30,8 +30,8 @@ function changeLanguage(header, section, about, language, languageClass) {
 }
 
 // Portuguese
-$(function() {
-    $(".br").click(function() {
+$(function () {
+    $(".br").click(function () {
         changeLanguage(
             ["Home", "Personagens", "Inimigos", "Contato"],
             "Aventuras Arqueológicas, Em Buscas das Relíquias Perdidas",
@@ -43,8 +43,8 @@ $(function() {
 });
 
 // English
-$(function() {
-    $(".en").click(function() {
+$(function () {
+    $(".en").click(function () {
         changeLanguage(
             ["Home", "Characters", "Enemies", "Contact"],
             "Archaeological Adventures in Search of Lost Relics",
@@ -56,8 +56,8 @@ $(function() {
 });
 
 // Spanish
-$(function() {
-    $(".es").click(function() {
+$(function () {
+    $(".es").click(function () {
         changeLanguage(
             ["Inicio", "Personajes", "Enemigos", "Contacto"],
             "Aventuras Arqueológicas En Busca de Reliquias Perdidas",
@@ -66,4 +66,6 @@ $(function() {
             "change-es"
         );
     });
+
 });
+

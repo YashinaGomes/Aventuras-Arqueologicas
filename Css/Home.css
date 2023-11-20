@@ -15,7 +15,7 @@ body {
     background-position: center;
     min-height: 100vh;
     background-color: #DC8B3B;
-    
+
 }
 
 /* Header Styles */
@@ -31,15 +31,16 @@ body {
     line-height: normal;
     letter-spacing: 0.18px;
     height: 70px;
-        
+
 }
 
 /* Navigation Menu Styles */
 .nav-menu {
     display: flex;
     align-items: center;
-    justify-content: center; /* Adicionando para centralizar horizontalmente */
-    margin-top:28px;
+    justify-content: center;
+    /* Adicionando para centralizar horizontalmente */
+    margin-top: 28px;
 }
 
 .nav-menu a {
@@ -52,14 +53,24 @@ body {
     letter-spacing: 0.18px;
     text-decoration: none;
     display: inline-block;
-    margin-top:23px;
-    margin-right: 200px; /* Ajuste conforme necessário */
-    transition: color 0.3s ease; /* Adicionando transição de cor para um efeito suave */
+    margin-top: 23px;
+    margin-right: 200px;
+    /* Ajuste conforme necessário */
+    transition: color 0.3s ease;
+    /* Adicionando transição de cor para um efeito suave */
+}
+
+.nav-menu a {
+    transition: transform 0.3s ease-in-out;
 }
 
 .nav-menu a:hover {
-    color: #844d16; /* Cor a ser aplicada no hover */
+    color: #050505;
+    /* Cor a ser aplicada no hover */
+    transform: translateY(-5px);
+    /* Movimenta a letra para cima por 5 pixels no hover */
 }
+
 
 
 
@@ -71,12 +82,23 @@ body {
 }
 
 /* Language Selector Styles */
+
+.language {
+    position: relative;
+    font-weight: bold;
+}
+
+.language a {
+    width: 120px;
+    margin-left: 40px;
+}
+
 .language-selected {
     display: flex;
     align-items: center;
     color: #482817;
     cursor: pointer;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 /* Language Flags Styles */
@@ -89,7 +111,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 15px;
-    
+
 }
 
 .language-selected.change-br:before {
@@ -107,9 +129,7 @@ body {
 /* Language Dropdown Styles */
 .language ul {
     position: absolute;
-    width: 140px;
     padding-top: 10px;
-    box-shadow: 0px 1px 10px rgba(121, 83, 83, 0.5);
     display: none;
 }
 
@@ -144,7 +164,11 @@ a.es:before {
     display: block;
 }
 
+
+
 /* Section Styles */
+
+
 .section h1 {
     color: #482817;
     text-align: center;
@@ -174,6 +198,7 @@ a.es:before {
     position: relative;
     top: 700px;
     left: 20px;
+
 }
 
 .about-container ul {
@@ -187,6 +212,14 @@ a.es:before {
 .about-container ul li a {
     color: #482817;
     text-decoration: none;
+}
+
+.about a:hover {
+    color: #050505;
+    /* Cor a ser aplicada no hover */
+    transform: translateY(-5px);
+    /* Movimenta a letra para cima por 5 pixels no hover */
+
 }
 
 /* Copyright Styles */
@@ -222,14 +255,11 @@ footer span {
         cursor: pointer;
         border: none;
     }
+
 }
 
 /* Larger Than Mobile Styles */
 @media screen and (min-width: 621px) {
-    .header-container {
-        height: 70px;
-        flex-shrink: 0;
-    }
 
     .Hamburguer-menu {
         display: none;
