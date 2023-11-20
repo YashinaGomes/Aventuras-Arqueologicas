@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    background-image: url(../public/images/pgina-inicial-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-color: #DC8B3B;
+    
+}
+
+/* Header Styles */
+.header {
+    background: rgba(254, 179, 62, 0.58);
+    box-shadow: 1px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #482817;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Strong', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    height: 70px;
+        
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adicionando para centralizar horizontalmente */
+    margin-top:28px;
+}
+
+.nav-menu a {
+    color: #482817;
+    font-family: 'Timmana', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top:23px;
+    margin-right: 200px; /* Ajuste conforme necessário */
+    transition: color 0.3s ease; /* Adicionando transição de cor para um efeito suave */
+}
+
+.nav-menu a:hover {
+    color: #844d16; /* Cor a ser aplicada no hover */
+}
+
+
+
+.header-container {
+    width: 1440px;
+    height: 70px;
+    flex-shrink: 0;
+    margin: 13px;
+}
+
+/* Language Selector Styles */
+.language-selected {
+    display: flex;
+    align-items: center;
+    color: #482817;
+    cursor: pointer;
+    margin-top:20px;
+}
+
+/* Language Flags Styles */
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    
+}
+
+.language-selected.change-br:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+.language-selected.change-en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+.language-selected.change-es:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
+/* Language Dropdown Styles */
+.language ul {
+    position: absolute;
+    width: 140px;
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgba(121, 83, 83, 0.5);
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+a.en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+a.es:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
+.language:hover ul {
+    display: block;
+}
+
+/* Section Styles */
+.section h1 {
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Timmana', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.5px;
+    margin-top: 100px;
+}
+
+/* About Container Styles */
+.about-container {
+    margin-bottom: 20px;
+    color: #482817;
+    text-align: center;
+    font-family: 'Timmana', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.17px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 700px;
+    left: 20px;
+}
+
+.about-container ul {
+    display: flex;
+}
+
+.about-container ul li {
+    list-style: none;
+}
+
+.about-container ul li a {
+    color: #482817;
+    text-decoration: none;
+}
+
+/* Copyright Styles */
+.Copyright {
+    position: relative;
+    top: 700px;
+    left: 20px;
+}
+
+footer span {
+    color: #482817;
+    text-align: center;
+    font-family: 'Timmana', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.17px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 620px) {
+    .nav {
+        display: none;
+    }
+
+    .Hamburguer-menu {
+        display: block;
+        padding: 6px;
+        font-size: calc(2em + 2vw);
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+/* Larger Than Mobile Styles */
+@media screen and (min-width: 621px) {
+    .header-container {
+        height: 70px;
+        flex-shrink: 0;
+    }
+
+    .Hamburguer-menu {
+        display: none;
+    }
+}
