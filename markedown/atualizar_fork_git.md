@@ -8,7 +8,7 @@ git remote -v
 ```
 2. **Caso não tenha, adicione o repositório original como um controle remoto chamado "upstream"**
 ```
-git remote add upstream https://github.com/dvidirin/projeto_backend.git
+git remote add upstream https://github.com/YashinaGomes/Aventuras-Arqueologicas.git
 ```
 3. **Verifique se o controle remoto "upstream" foi adicionado corretamente**
 ```
