@@ -14,8 +14,6 @@ git checkout -b minha-contribuicao
 git push origin minha-contribuicao
 ```
 
-https://github.com/YashinaGomes/Aventuras-Arqueologicas.git
-
 4. Abra um Pull Request no link: [https://github.com/`SEU-USUARIO`/Aventuras-Arqueologicas/pull/new/`minha-contribuicao`] ele aparece após o comando anterior.
 
 5. Volte pra sua branch principal.
