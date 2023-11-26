@@ -3,7 +3,7 @@
 # Projeto Integrador Front-End <br> Escola Korú <br> Idealizado Pela Parceria do iFood / Potência Tech
 
 <div align="center">
-  <img src="public/images/logo_idealizadores.png" alt="Logo dos Idealizadores - Escola Koru em Parceria com iFood - Potência Tech" width="50%">
+  <img src="public/images/logo_idealizadores_koru_ifood_potencia_tech.png" alt="Logo dos Idealizadores - Escola Koru em Parceria com iFood - Potência Tech" width="50%">
 </div>
 
 ## Curso de Front-End <br> Grupo 8 - Professor: Gabriel
