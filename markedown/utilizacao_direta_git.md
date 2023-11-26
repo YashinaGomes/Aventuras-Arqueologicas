@@ -15,7 +15,7 @@ git config --global user.email 'your_email@domain.com.br'
 ```
 3. **Faça o clone deste repositório.**
 ```
-git clone https://github.com/dvidirin/projeto_backend.git .
+git clone https://github.com/YashinaGomes/Aventuras-Arqueologicas.git
 ```
 4. **LEMBRE: Antes de Alterar e Antes de Commitar, atualize seu repositório para evitar conflito.**
 ```
