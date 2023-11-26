@@ -13,7 +13,7 @@ git config --global user.name 'FirstName LastName'
 ```
 git config --global user.email 'your_email@domain.com.br'
 ```
-3. **Faça um fork deste repositório: [https://github.com/dvidirin/projeto_backend.git](https://github.com/dvidirin/projeto_backend.git).**
+3. **Faça um fork deste repositório: [https://github.com/YashinaGomes/Aventuras-Arqueologicas.git](https://github.com/YashinaGomes/Aventuras-Arqueologicas.git).**
 
 4. **Faça o clone deste repositório.**
 ```
