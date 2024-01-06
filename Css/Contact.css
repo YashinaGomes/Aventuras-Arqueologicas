@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    background-image: url(../public/images/esfinge-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    background-color: #DC8B3B;
+    margin: 0;
+       
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Header Styles */
+.header {
+    background: rgba(254, 179, 62, 0.58);
+    box-shadow: 1px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #482817;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Strong', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    height: 70px;
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adicionando para centralizar horizontalmente */
+    margin-top: 28px;
+}
+
+.nav-menu a {
+    color: #482817;
+    font-family: 'Timmana', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 23px;
+    margin-right: 200px;
+    /* Ajuste conforme necessário */
+    transition: color 0.3s ease;
+    /* Adicionando transição de cor para um efeito suave */
+}
+
+.nav-menu a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #050505;
+    /* Cor a ser aplicada no hover */
+    transform: translateY(-5px);
+    /* Movimenta a letra para cima por 5 pixels no hover */
+}
+
+.header-container {
+    width: 1440px;
+    height: 70px;
+    flex-shrink: 0;
+    margin: 13px;
+}
+
+/* Language Selector Styles */
+
+.language {
+    position: relative;
+    font-weight: bold;
+}
+
+.language a {
+    width: 120px;
+    margin-left: 40px;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    color: #482817;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Language Flags Styles */
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.language-selected.change-br:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+.language-selected.change-en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+.language-selected.change-es:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
+/* Language Dropdown Styles */
+.language ul {
+    position: absolute;
+    padding-top: 10px;
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+a.en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+a.es:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
+.language:hover ul {
+    display: block;
+}
+
+/* Desenvolvedores Styles */
+
+.Desenvolvedores {
+    padding-top: 650px;
+}
+
+.section h1 {
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Timmana', sans-serif;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.5px;
+    padding: 100px;
+}
+.Desenvolvedores-container {
+    display: flex;
+    justify-content: space-around;
+    /* Ajuste conforme necessário */
+    flex-wrap: wrap;
+    /* Para garantir que os elementos se ajustem a diferentes tamanhos de tela */
+    /* Adicione a margem superior aqui, se necessário */
+}
+
+.Desenvolvedores-container>div {
+    position: relative;
+    border-radius: 26px;
+    border: 4px solid rgba(72, 40, 23, 0.44);
+    background: #EAA643;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 10px 20px 10px;
+    width: 252px;
+    font-family: Stoke;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    height: 301px;
+    transition: box-shadow 0.3s ease-in-out; /* Adicione esta linha para suavizar o efeito de transição */
+}
+
+.Desenvolvedores-container>div:hover {
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25); /* Ou qualquer valor que você preferir */
+}
+
+
+
+.Desenvolvedores-nomes p {
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Timmana;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    /* 24.054px */
+    letter-spacing: 0.3px;
+    margin-top: -55px;
+}
+
+/* Section Styles */
+.Desenvolvedores-container img {
+    /* Adicione aqui os estilos específicos para as imagens */
+    max-width: 100%;
+    /* Exemplo: largura máxima de 100% */
+    height: auto;
+    /* Exemplo: altura automática para manter a proporção */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.Cesar-img {
+    width: 212px;
+    height: 201px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation: floatCesar 8s ease-in-out infinite; /* Ajuste conforme necessário */
+}
+.Daniel-img {
+    width: 212px;
+    height: 201px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    animation: floatDaniel 5s ease-in-out infinite; /* Ajuste conforme necessário */
+}
+.Cesar-img::before,
+.Joao-img::before,
+.Moises-img::before,
+.Yashina-img::before,
+.Daniel-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(52, 46, 46, 0.8) 0%, rgba(255, 255, 255, 0) 50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.Joao-img {
+    width: 132px;
+    height: 208px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation: floatCesar 13s ease-in-out infinite; 
+}
+
+.Moises-img {
+    width: 127px;
+    height: 207px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation: floatCesar 10s ease-in-out infinite; 
+}
+
+.Yashina-img {
+    width: 141px;
+    height: 193px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation: floatCesar 7s ease-in-out infinite; 
+}
+@keyframes floatCesar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px); /* Ajuste conforme necessário */
+    }
+}
+
+@keyframes floatDaniel {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px); /* Ajuste conforme necessário */
+    }
+}
+@keyframes floatJoao {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px); /* Ajuste conforme necessário */
+    }
+}
+
+@keyframes floatMoises {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px); /* Ajuste conforme necessário */
+    }
+}
+
+@keyframes floatYashina {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px); /* Ajuste conforme necessário */
+    }
+}
+
+
+/* Adicione os estilos do botão aqui, se necessário */
+.botao-container {
+    display: inline;
+    width: 25px;
+    height: 25px;
+    margin-left: 160px;
+    transition: transform 0.3s ease-in-out;
+
+}
+.botao-container img:hover {
+    transform: translateY(-5px); /* Ajuste conforme necessário */
+}
+
+/* About Container Styles */
+.about-container {
+    margin-bottom: 20px;
+    color: #482817;
+    text-align: center;
+    font-family: 'Timmana', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.17px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 700px;
+    left: 20px;
+}
+
+.about-container ul {
+    display: flex;
+}
+
+.about-container ul li {
+    list-style: none;
+}
+
+.about-container ul li a {
+    color: #482817;
+    text-decoration: none;
+}
+
+.about a:hover {
+    color: #050505;
+    /* Cor a ser aplicada no hover */
+    transform: translateY(-5px);
+    /* Movimenta a letra para cima por 5 pixels no hover */
+}
+
+/* Copyright Styles */
+.Copyright {
+    position: relative;
+    top: 700px;
+    left: 20px;
+}
+
+footer span {
+    color: #482817;
+    text-align: center;
+    font-family: 'Timmana', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.17px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 620px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .Hamburguer-menu {
+        display: block;
+        padding: 6px;
+        font-size: calc(2em + 2vw);
+        background-color: transparent;
+        color: #482817;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 28px;
+        background-color: rgba(254, 180, 62, 0.768); /* Adicione esta linha para definir a cor de fundo */
+    }
+    
+    .nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        color: #482817;
+        transform: translateY(-5px);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+    
+
+    .nav-menu a {
+        margin: 0;
+        /* Adapte conforme necessário para ajustar o espaçamento entre os itens do menu */
+    }
+
+    .section h1 {
+        color: #482817;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Timmana', sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80.18%;
+        letter-spacing: 0.5px;
+        margin-top: 30px;
+    }
+
+    .Inimigos-container {
+        width: 80%;
+        /* Porcentagem em relação ao contêiner pai */
+        max-width: 800px;
+        /* Ou qualquer valor máximo desejado */
+        height: auto;
+        /* Adapta a altura automaticamente */
+    }
+}
+
+/* Larger Than Mobile Styles */
+@media screen and (min-width: 621px) {
+    .Hamburguer-menu {
+        display: none;
+    }
+}

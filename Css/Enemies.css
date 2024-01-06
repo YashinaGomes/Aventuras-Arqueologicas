@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+
+body {
+    background-image: url(../public/images/esfinge-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    background-color: #DC8B3B;
+    margin: 0;
+    /* Adicione esta linha para remover a margem padrão do body */
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Header Styles */
+.header {
+    background: rgba(254, 179, 62, 0.58);
+    box-shadow: 1px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #482817;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Strong', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    height: 70px;
+
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adicionando para centralizar horizontalmente */
+    margin-top: 28px;
+}
+
+.nav-menu a {
+    color: #482817;
+    font-family: 'Timmana', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 23px;
+    margin-right: 200px;
+    /* Ajuste conforme necessário */
+    transition: color 0.3s ease;
+    /* Adicionando transição de cor para um efeito suave */
+}
+
+.nav-menu a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #050505;
+    /* Cor a ser aplicada no hover */
+    transform: translateY(-5px);
+    /* Movimenta a letra para cima por 5 pixels no hover */
+}
+
+
+
+
+.header-container {
+    width: 1440px;
+    height: 70px;
+    flex-shrink: 0;
+    margin: 13px;
+}
+
+/* Language Selector Styles */
+
+.language {
+    position: relative;
+    font-weight: bold;
+}
+
+.language a {
+    width: 120px;
+    margin-left: 40px;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    color: #482817;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Language Flags Styles */
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+
+}
+
+.language-selected.change-br:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+.language-selected.change-en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+.language-selected.change-es:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
+/* Language Dropdown Styles */
+.language ul {
+    position: absolute;
+    padding-top: 10px;
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+a.en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+a.es:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
+.language:hover ul {
+    display: block;
+}
+
+/* Section Styles */
+.Inimigos {
+    padding-top: 650px;
+
+}
+
+.Inimigos-container {
+   
+    height: 1156px;
+
+}
+.section h1 {
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Timmana', sans-serif;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.5px;
+    padding: 100px;
+
+}
+
+.adicionar-btn {
+    border-radius: 31px;
+    border: 3px solid #D18B41;
+    background: url('caminho/para/sua/imagem.png') center center no-repeat, #D18B41;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 123px;
+    height: 46px;
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Timmana;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    /* 13.631px */
+    letter-spacing: 0.17px;
+
+    position: absolute;
+    right: 180px;
+    /* Ajuste conforme necessário */
+    top: 850px;
+    /* Ajuste conforme necessário */
+}
+
+/* Efeito hover */
+.adicionar-btn:hover {
+    background: url('caminho/para/sua/imagem-hover.png') center center no-repeat, #FFC57C;
+}
+
+
+
+
+.Inimigos-nomes p {
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Timmana;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    /* 24.054px */
+    letter-spacing: 0.3px;
+    margin: 40px;
+
+}
+.span {
+    color: #482817;
+text-align: center;
+font-family: Stoke;
+font-size: 9px;
+font-style: normal;
+font-weight: 400;
+line-height: 157.4%; /* 14.166px */
+letter-spacing: 1.44px;
+width: 187px;
+}
+
+/* Estilos comuns para todos os cards de inimigos */
+.Inimigos-container>div {
+    position: relative;
+    margin-bottom: 9px;
+    border-radius: 40px;
+    border: 7px solid #DC8B3A;
+    background: rgba(220, 139, 58, 0.53);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 80px;
+    width: 322px;
+    height: 395px;
+    overflow: hidden; /* Garante que o lado de trás não seja visível inicialmente */
+    transform-style: preserve-3d; /* Mantém a perspectiva ao rotacionar */
+    transition: transform 0.5s; /* Adiciona uma transição suave na rotação */
+}
+
+.Inimigos-container>div:hover {
+    transform: rotateY(18deg); /* Rotação de 180 graus no eixo Y */
+}
+
+/* Conteúdo do lado de trás do card */
+.Inimigos-container>div .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden; /* Impede a visibilidade do lado de trás quando não está girado */
+    transform: rotateY(180deg); /* Inicia o lado de trás virado */
+    padding: 20px;
+    color: white;
+    text-align: center;
+        /* Adicione estilos adicionais para o lado de trás do card, se necessário */
+}
+
+
+/* Estilos específicos para os botões dentro de cada card */
+/* Estilos específicos para os botões dentro de cada card */
+.Inimigos-container .botao-container {
+    /* Adicione aqui os estilos específicos para a posição dos botões */
+    position: absolute;
+    bottom: 10px;
+    /* Ajusta a distância do fundo do card */
+    left: 50%;
+    /* Coloca os botões no centro do card */
+    transform: translateX(-50%);
+    /* Centraliza os botões horizontalmente */
+}
+
+.Inimigos-container .editar-btn,
+.Inimigos-container .excluir-btn {
+    cursor: pointer;
+    /* Exemplo: cursor de ponteiro ao passar por cima */
+    border-radius: 31px;
+    border: 3px solid #D18B41;
+    background: #D18B41;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 84px;
+    height: 32px;
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Timmana;
+    font-size: 17px;
+    font-style: normal;
+    padding: 4px;
+    transition: background 0.7s ease;
+    /* Adiciona transição suave na cor de fundo */
+}
+
+/* Efeito hover */
+.Inimigos-container .editar-btn:hover,
+.Inimigos-container .excluir-btn:hover {
+    background: #f2ac55;
+    /* Altera a cor de fundo no hover */
+}
+
+
+/* Estilos específicos para as imagens dentro de cada card */
+.Inimigos-container img {
+    /* Adicione aqui os estilos específicos para as imagens */
+    max-width: 100%;
+    /* Exemplo: largura máxima de 100% */
+    height: auto;
+    /* Exemplo: altura automática para manter a proporção */
+}
+
+
+.Mumia-img {
+    width: 137px;
+    height: 218px;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    /* Altere este valor */
+}
+
+
+.Fantasma-img {
+    width: 212px;
+    height: 201px;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    /* Altere este valor para mover a imagem para baixo */
+}
+
+
+
+.Esqueleto-img {
+    width: 132px;
+    height: 208px;
+    margin: 0 auto;
+
+    /* Altere este valor para mover a imagem para baixo */
+}
+
+.Zumbi-img {
+    width: 127px;
+    height: 207px;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    /* Altere este valor para mover a imagem para baixo */
+}
+
+.Farao-img {
+    width: 141px;
+    height: 193px;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    /* Altere este valor para mover a imagem para baixo */
+}
+
+.Humano-img {
+    width: 155px;
+    height: 201px;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    /* Altere este valor para mover a imagem para baixo */
+}
+
+
+.Inimigos-container {
+    border-radius: 66px;
+    background: rgba(251, 199, 77, 0.45);
+    box-shadow: 2px 2px 19px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    /* Alteração aqui para ocupar 100% da largura disponível */
+    max-width: 1353px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os elementos se movam para a próxima linha se não houver espaço suficiente */
+    justify-content: space-around;
+    /* Alinha os elementos igualmente espaçados */
+}
+
+.Mumia,
+.Fantasma,
+.Esqueleto,
+.Zumbi,
+.Farao,
+.Humano {
+    flex: 0 0 calc(30% - 20px);
+    /* Calcula a largura do elemento, deixando algum espaço para margens */
+    margin: 20px;
+}
+
+
+
+
+
+/* About Container Styles */
+.about-container {
+    margin-bottom: 20px;
+    color: #482817;
+    text-align: center;
+    font-family: 'Timmana', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.17px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 700px;
+    left: 20px;
+
+}
+
+.about-container ul {
+    display: flex;
+}
+
+.about-container ul li {
+    list-style: none;
+}
+
+.about-container ul li a {
+    color: #482817;
+    text-decoration: none;
+}
+
+.about a:hover {
+    color: #050505;
+    /* Cor a ser aplicada no hover */
+    transform: translateY(-5px);
+    /* Movimenta a letra para cima por 5 pixels no hover */
+
+}
+
+/* Copyright Styles */
+.Copyright {
+    position: relative;
+    top: 700px;
+    left: 20px;
+}
+
+footer span {
+    color: #482817;
+    text-align: center;
+    font-family: 'Timmana', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.17px;
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 620px) {
+    .nav-menu {
+        display: none;
+
+    }
+
+    .Hamburguer-menu {
+        display: block;
+        padding: 6px;
+        font-size: calc(2em + 2vw);
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        border: none;
+    }
+
+    .nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        color: #050505;
+        /* Cor a ser aplicada no hover */
+        transform: translateY(-5px);
+        /* Movimenta a letra para cima por 5 pixels no hover */
+        position: absolute;
+        top: 70px;
+        /* Ajuste conforme necessário para evitar sobreposição com o cabeçalho */
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-menu a {
+        margin: 0;
+        /* Adapte conforme necessário para ajustar o espaçamento entre os itens do menu */
+    }
+
+    .section h1 {
+        color: #482817;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Timmana', sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80.18%;
+        letter-spacing: 0.5px;
+        margin-top: 30px;
+    }
+
+    .Inimigos-container {
+        width: 80%;
+        /* Porcentagem em relação ao contêiner pai */
+        max-width: 800px;
+        /* Ou qualquer valor máximo desejado */
+        height: auto;
+        /* Adapta a altura automaticamente */
+    }
+
+}
+
+
+/* Larger Than Mobile Styles */
+@media screen and (min-width: 621px) {
+    .Hamburguer-menu {
+        display: none;
+    }
+}

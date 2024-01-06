@@ -2,58 +2,161 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Archaeological Adventures</title>
-     <link rel="stylesheet" href="./Css/Home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archaeological Adventures</title>
+    <link rel="stylesheet" href="./Css/Enemies.css">
 </head>
 
 <body>
 
-     <header class="header">
-         <div class="header-container">
-             <nav class="nav-menu">
-                 <a href="#">Home</a>
-                 <a href="#">Characters</a>
-                 <a href="#">Enemies</a>
-                 <a href="#">Contact</a>
-                 <div class="language">
-                     <div class="language-selected">
-                         pt-BR
-                     </div>
-                     <ul>
-                         <li><a href="#" class="br">Portuguese</a></li>
-                         <li><a href="#" class="en">English</a></li>
-                         <li><a href="#" class="es">Español</a></li>
-                     </ul>
-                 </div>
-             </nav>
-         </div>
-     </header>
+    <header class="header">
+        <div class="header-container">
+            <button class="Hamburguer-menu">&#9776;</button>
+            <nav class="nav-menu">
+                <a href="./Index.html">Home</a>
+                 <a href="./Characteres.html">Characters</a>
+                 <a href="./Enemies.html">Enemies</a>
+                 <a href="./Contact.html">Contact</a>
+                <div class="language">
+                    <div class="language-selected">
+                        en-US
+                    </div>
+                    <ul>
+                        <li><a href="#" class="br">Portugues</a></li>
+                        <li><a href="#" class="en">English</a></li>
+                        <li><a href="#" class="es">Español</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-     <section class="section">
-         <h1 id="title">Archaeological Adventures In Search of Lost Relics</h1>
-     </section>
+        <section class="Inimigos">
+            <div class="section">
+                <h1>INIMIGOS</h1>
+                <button class="adicionar-btn">Adicionar</button>
+            </div>
 
-     <section class="about">
-         <div class="about-container">
-             <ul>
-                 <li><a href="#">Terms of service |</a></li>
-                 <li><a href="#">Privacy policy |</a></li>
-                 <li><a href="#">Safety and protection</a></li>
-             </ul>
-         </div>
-     </section>
+            <div class="Inimigos-container">
 
-     <section class="Copyright">
-        <footer>
-            <span>Copyright 2023© Archaeological Adventures - All Rights Reserved.</span>
-        </footer>
-     </section>
+                <!-- Section Header -->
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-     <script src="./js/Home.js"></script>
+                <!-- Múmia (Mummy) -->
+                <div id="mumia" class="Mumia">
+                    <div class="Inimigos-nomes">
+                        <p>Múmia</p>
+                    </div>
+                    <div class="Mumia-img">
+                        <img src="public/images/mumia-1.png" alt="Múmia">
+                    </div>
+
+                    <div class="botao-container">
+                        <button class="editar-btn">Editar</button>
+                        <button class="excluir-btn">Excluir</button>
+                    </div>
+                </div>
+
+                <!-- Fantasma (Ghost) -->
+                <div id="fantasma" class="Fantasma">
+                    <div class="Inimigos-nomes">
+                        <p>Fantasma</p>
+                    </div>
+                    <div class="Fantasma-img">
+                        <img src="public/images/fantasma-1.png" alt="Fantasma">
+                    </div>
+
+                    <div class="botao-container">
+                        <button class="editar-btn">Editar</button>
+                        <button class="excluir-btn">Excluir</button>
+                    </div>
+                </div>
+
+                <!-- Esqueleto (Skeleton) -->
+                <div id="esqueleto" class="Esqueleto">
+                    <div class="Inimigos-nomes">
+                        <p>Esqueleto</p>
+                    </div>
+                    <div class="Esqueleto-img">
+                        <img src="public/images/esqueleto-2.png" alt="Esqueleto">
+                    </div>
+
+                    <div class="botao-container">
+                        <button class="editar-btn">Editar</button>
+                        <button class="excluir-btn">Excluir</button>
+                    </div>
+                </div>
+
+                <!-- Zumbi (Zombie) -->
+                <div id="zumbi" class="Zumbi">
+                    <div class="Inimigos-nomes">
+                        <p>Zumbi</p>
+                    </div>
+                    <div class="Esqueleto-img">
+                        <img src="public/images/zumbi-1.png" alt="Zumbi">
+                    </div>
+
+                    <div class="botao-container">
+                        <button class="editar-btn">Editar</button>
+                        <button class="excluir-btn">Excluir</button>
+                    </div>
+                </div>
+
+                <!-- Faraó (Pharaoh) -->
+                <div id="farao" class="Farao">
+                    <div class="Inimigos-nomes">
+                        <p>Faraó</p>
+                    </div>
+                    <div class="Farao-img">
+                        <img src="public/images/fara-1.png" alt="Faraó">
+                    </div>
+
+                    <div class="botao-container">
+                        <button class="editar-btn">Editar</button>
+                        <button class="excluir-btn">Excluir</button>
+                    </div>
+                </div>
+
+                <!-- Humano (Human) -->
+                <div id="humano" class="Humano">
+                    <div class="Inimigos-nomes">
+                        <p>Humano</p>
+                    </div>
+                    <div class="Humano-img">
+                        <img src="public/images/unnamed.png" alt="Humano">
+                    </div>
+
+                    <div class="botao-container">
+                        <button class="editar-btn">Editar</button>
+                        <button class="excluir-btn">Excluir</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="about">
+            <div class="about-container">
+                <ul>
+                    <li><a href="#">Terms of service |</a></li>
+                    <li><a href="#">Privacy policy |</a></li>
+                    <li><a href="#">Safety and protection</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="Copyright">
+            <footer>
+                <span>Copyright 2023© Archaeological Adventures - All Rights Reserved.</span>
+            </footer>
+        </section>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/Home.js"></script>
+    <script src="./js/HomeCursor.js"></script>
+    <script src="./js/button.js"></script>
 </body>
 
 </html>

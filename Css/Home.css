@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
 
-/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,15 +7,25 @@
 }
 
 /* Body Styles */
+
 body {
     background-image: url(../public/images/pgina-inicial-1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     min-height: 100vh;
     background-color: #DC8B3B;
-
+    margin: 0; /* Adicione esta linha para remover a margem padrão do body */
 }
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 
 /* Header Styles */
 .header {
@@ -164,10 +173,7 @@ a.es:before {
     display: block;
 }
 
-
-
 /* Section Styles */
-
 
 .section h1 {
     color: #482817;
@@ -240,10 +246,12 @@ footer span {
     letter-spacing: 0.17px;
 }
 
+
 /* Mobile Styles */
 @media screen and (max-width: 620px) {
-    .nav {
+    .nav-menu {
         display: none;
+        
     }
 
     .Hamburguer-menu {
@@ -255,13 +263,43 @@ footer span {
         cursor: pointer;
         border: none;
     }
+    .nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        color: #050505;
+        /* Cor a ser aplicada no hover */
+        transform: translateY(-5px);
+        /* Movimenta a letra para cima por 5 pixels no hover */
+        position: absolute;
+        top: 70px;
+        /* Ajuste conforme necessário para evitar sobreposição com o cabeçalho */
+        left: 0;
+        width: 100%;
+    }
 
+    .nav-menu a {
+        margin: 0;
+        /* Adapte conforme necessário para ajustar o espaçamento entre os itens do menu */
+    }
+    .section h1 {
+        color: #482817;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Timmana', sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80.18%;
+        letter-spacing: 0.5px;
+        margin-top: 30px;
+    }
 }
+
 
 /* Larger Than Mobile Styles */
 @media screen and (min-width: 621px) {
-
     .Hamburguer-menu {
         display: none;
     }
 }
+

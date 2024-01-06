@@ -2,58 +2,155 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Archaeological Adventures</title>
-     <link rel="stylesheet" href="./Css/Home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archaeological Adventures</title>
+    <link rel="stylesheet" href="./Css/Characters.css">
 </head>
 
 <body>
 
-     <header class="header">
-         <div class="header-container">
-             <nav class="nav-menu">
-                 <a href="#">Home</a>
-                 <a href="#">Characters</a>
-                 <a href="#">Enemies</a>
-                 <a href="#">Contact</a>
-                 <div class="language">
-                     <div class="language-selected">
-                         pt-BR
-                     </div>
-                     <ul>
-                         <li><a href="#" class="br">Portuguese</a></li>
-                         <li><a href="#" class="en">English</a></li>
-                         <li><a href="#" class="es">Español</a></li>
-                     </ul>
-                 </div>
-             </nav>
-         </div>
-     </header>
+    <header class="header">
+        <div class="header-container">
+            <button class="Hamburguer-menu">&#9776;</button>
+            <nav class="nav-menu">
+                <a href="./Index.html">Home</a>
+                <a href="./Characteres.html">Characters</a>
+                <a href="./Enemies.html">Enemies</a>
+                <a href="./Contact.html">Contact</a>
+                <div class="language">
+                    <div class="language-selected">
+                        en-US
+                    </div>
+                    <ul>
+                        <li><a href="#" class="br">Portugues</a></li>
+                        <li><a href="#" class="en">English</a></li>
+                        <li><a href="#" class="es">Español</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-     <section class="section">
-         <h1 id="title">Archaeological Adventures In Search of Lost Relics</h1>
-     </section>
+        <section class="History">
+            <div class="History-container">
 
-     <section class="about">
-         <div class="about-container">
-             <ul>
-                 <li><a href="#">Terms of service |</a></li>
-                 <li><a href="#">Privacy policy |</a></li>
-                 <li><a href="#">Safety and protection</a></li>
-             </ul>
-         </div>
-     </section>
+                <div class="section">
+                    <h1>HISTÓRIA</h1>
+                </div>
+                <p>No jogo "Aventuras Arqueológicas: Em Busca das Relíquias Perdidas", os jogadores são<br>
+                    apresentados aos protagonistas, Dr. David Mitchell, um renomado arqueólogo e historiador; e<br>
+                    Maya, uma jovem arqueóloga ardente e determinada, que sonha em desvendar os segredos das<br>
+                    Ruínas Perdidas. O jogo se passa em um mundo repleto de mistérios e lendas antigas.<br>
+                    David recebe um convite misterioso para uma expedição arqueológica que o levará a um<br>
+                    local remoto e desconhecido, conhecido como o "Vale dos Segredos Eternos". Intrigado e<br>
+                    determinado a desvendar o enigma por trás desse convite, David convida sua amiga Maya e<br>
+                    juntos partem em mais uma aventura.<br>
+                    À medida que os jogadores exploram o "Vale dos Segredos Eternos", eles se encontram em<br>
+                    meio a paisagens deslumbrantes, templos esquecidos e artefatos antigos. Conforme avançam<br>
+                    na história, os jogadores descobrem que há uma antiga profecia envolvendo artefatos mágicos<br>
+                    perdidos que podem conceder poderes incríveis a quem os encontrar. No entanto, eles também<br>
+                    descobrem que não estão sozinhos em sua busca. Uma organização secreta, conhecida como<br>
+                    "Os Guardiões das Relíquias", está determinada a obter esses artefatos para seus próprios fins<br>
+                    sombrios. David e Maya devem enfrentar desafios, quebra-cabeças e confrontos com os<br>
+                    Guardiões para proteger as relíquias e desvendar a verdade por trás da profecia.<br>
+                    A história culmina em uma emocionante revelação sobre o poder das relíquias e seu<br>
+                    significado para o mundo. Os jogadores enfrentam uma escolha final que determinará o destino<br>
+                    das relíquias e o resultado da aventura de David e Maya. A conclusão da história principal deixa<br>
+                    espaço para futuras expansões e missões secundárias, permitindo que os jogadores continuem<br>
+                    explorando o mundo e desvendando mais segredos arqueológicos.</p>
 
-     <section class="Copyright">
-        <footer>
-            <span>Copyright 2023© Archaeological Adventures - All Rights Reserved.</span>
-        </footer>
-     </section>
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-     <script src="./js/Home.js"></script>
+
+
+                <div id="carousel-container">
+                    <div id="carousel">
+                       
+                        <div class="carousel-item">
+                            <img src="public/images/1.png" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/images/2.png" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/images/3.png" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/images/4.png" alt="Image 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/images/5.png" alt="Image 5">
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <button class="carousel-btn prev"></button>
+                <button class="carousel-btn next"></button>
+
+
+                <div class="David">
+
+                    <h2>Dr. David Mitchell</h2>
+                    <img src="public/images/david.png" alt="Imagem do Dr. David Mitchell">
+                    <p>Renomado arqueólogo e historiador. Ele é professor titular da Universidade de Oxford e<br>
+                        diretor do Instituto de Arqueologia da universidade. Seus principais interesses de pesquisa<br>
+                        incluem a história antiga da Grécia e Roma, bem como a arqueologia da Mesopotâmia.<br>
+                        Dr. Mitchell é um homem alto e magro, com cabelos grisalhos e olhos azuis penetrantes. Ele<br>
+                        é um acadêmico brilhante e apaixonado por seu trabalho. Ele é também um excelente professor<br>
+                        e comunicador, e seus livros e artigos são amplamente lidos e aclamados pela crítica.<br>
+                        Dr. Mitchell é um homem de grande integridade e ética. Ele é um defensor da preservação<br>
+                        do patrimônio cultural e um forte defensor da ciência arqueológica. Ele é também um homem<br>
+                        de grande compaixão e empatia, e está sempre disposto a ajudar os outros.<br>
+
+                    </p>
+                </div>
+
+                <div class="Maya">
+
+                    <h3>Arqueóloga Maya</h3>
+                    <img src="public/images/maya.png" alt="Imagem da Arqueóloga Maya">
+                    <p>Jovem arqueóloga ardente e determinada. Ela é uma mulher de cabelos pretos e olhos<br>
+                        castanhos, com um sorriso que ilumina uma sala. Apaixonada pelo seu trabalho e está sempre<br>
+                        procurando por novas descobertas.<br>
+                        Maya nasceu em uma pequena cidade no Brasil. Sempre foi fascinada pela história e pela<br>
+                        cultura, e sabia desde cedo que queria ser arqueóloga. Estudou arqueologia na Universidade
+                        de<br>
+                        São Paulo, onde se formou com honras.<br>
+                        Depois de se formar, Maya trabalhou como arqueóloga de campo em vários projetos no<br>
+                        Brasil e no exterior. Participou de escavações em sítios arqueológicos antigos, incluindo
+                        ruínas<br>
+                        de templos, cidades e vilas.<br>
+                        Maya está determinada a fazer contribuições significativas para o campo da arqueologia. Ela<br>
+                        acredita que a arqueologia pode nos ajudar a entender melhor o passado e a construir um<br>
+                        futuro melhor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-container">
+                <ul>
+                    <li><a href="#">Terms of service |</a></li>
+                    <li><a href="#">Privacy policy |</a></li>
+                    <li><a href="#">Safety and protection</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="Copyright">
+            <footer>
+                <span>Copyright 2023© Archaeological Adventures - All Rights Reserved.</span>
+            </footer>
+        </section>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/Home.js"></script>
+    <script src="./js/HomeCursor.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/Prototipo.js"></script>
+
 </body>
 
 </html>

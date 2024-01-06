@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+
+body {
+    background-image: url(../public/images/esfinge-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    background-color: #DC8B3B;
+    margin: 0;
+    /* Adicione esta linha para remover a margem padrão do body */
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Header Styles */
+.header {
+    background: rgba(254, 179, 62, 0.58);
+    box-shadow: 1px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #482817;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Strong', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    height: 70px;
+
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adicionando para centralizar horizontalmente */
+    margin-top: 28px;
+}
+
+.nav-menu a {
+    color: #482817;
+    font-family: 'Timmana', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 23px;
+    margin-right: 200px;
+    /* Ajuste conforme necessário */
+    transition: color 0.3s ease;
+    /* Adicionando transição de cor para um efeito suave */
+}
+
+.nav-menu a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #050505;
+    /* Cor a ser aplicada no hover */
+    transform: translateY(-5px);
+    /* Movimenta a letra para cima por 5 pixels no hover */
+}
+
+
+
+
+.header-container {
+    width: 1440px;
+    height: 70px;
+    flex-shrink: 0;
+    margin: 13px;
+}
+
+/* Language Selector Styles */
+
+.language {
+    position: relative;
+    font-weight: bold;
+}
+
+.language a {
+    width: 120px;
+    margin-left: 40px;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    color: #482817;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Language Flags Styles */
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+
+}
+
+.language-selected.change-br:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+.language-selected.change-en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+.language-selected.change-es:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
+/* Language Dropdown Styles */
+.language ul {
+    position: absolute;
+    padding-top: 10px;
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png);
+}
+
+a.en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+a.es:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png);
+}
+
+.language:hover ul {
+    display: block;
+}
+
+/* Section Styles */
+.History {
+    padding-top: 800px;
+}
+
+.section h1 {
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Timmana', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.5px;
+    padding: 150px;
+}
+
+.History-container {
+    border-radius: 66px;
+    background: rgba(251, 199, 77, 0.45);
+    box-shadow: 2px 2px 19px 0px rgba(0, 0, 0, 0.25);
+    width: 1353px;
+    height: 3000px;
+    /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+.History-container p {
+    color: rgba(0, 0, 0, 0.88);
+    text-align: center;
+    font-family: Stoke;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.4%;
+    letter-spacing: 2.88px;
+    
+}
+
+
+#carousel-container {
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 454px;
+    margin-top: 100px;
+    
+    
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+   
+    /* Garante que cada item do carrossel ocupe 100% da largura do contêiner */
+}
+
+/* Adicionei também um estilo básico para os botões */
+.carousel-btn {
+    background: rgba(254, 179, 62, 0.58);
+    box-shadow: 1px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #482817;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Timmana;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 9px;
+    position: relative;
+    margin-left: 420px;
+        
+}
+
+.carousel-btn:hover {
+    background: rgba(238, 156, 24, 0.58);
+}
+
+.carousel-btn.prev::before {
+    content: '\2190';
+    /* Unicode para a seta para a esquerda */
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5px;
+   
+
+}
+
+.carousel-btn.next::before {
+    content: '\2192';
+    /* Unicode para a seta para a direita */
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5px;
+}
+
+
+.David h2 {
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Timmana;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    /* 48.108px */
+    letter-spacing: 0.6px;
+}
+
+.David p {
+    color: #482817;
+    text-align: center;
+    font-family: Stoke;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.4%;
+    /* 28.332px */
+    letter-spacing: 2.88px;
+
+}
+
+.David {
+    text-align: center;
+    /* Centraliza o conteúdo dentro da div */
+    margin-top: 150px;
+}
+
+.David img {
+    display: block;
+    /* Exibe a imagem como bloco */
+    margin: auto;
+    /* Margem automática nos lados para centralizar horizontalmente */
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse a largura da div */
+}
+
+.Maya h3 {
+    color: #482817;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Timmana;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    /* 48.108px */
+    letter-spacing: 0.6px;
+}
+
+.Maya p {
+    color: #482817;
+    text-align: center;
+    font-family: Stoke;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.4%;
+    /* 28.332px */
+    letter-spacing: 2.88px;
+}
+
+.Maya {
+    text-align: center;
+    /* Centraliza o conteúdo dentro da div */
+    margin-top: 100px;
+}
+
+.Maya img {
+    display: block;
+    /* Exibe a imagem como bloco */
+    margin: auto;
+    /* Margem automática nos lados para centralizar horizontalmente */
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse a largura da div */
+}
+
+/* About Container Styles */
+.about-container {
+    margin-bottom: 20px;
+    color: #482817;
+    text-align: center;
+    font-family: 'Timmana', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.17px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 700px;
+    left: 20px;
+
+}
+
+.about-container ul {
+    display: flex;
+}
+
+.about-container ul li {
+    list-style: none;
+}
+
+.about-container ul li a {
+    color: #482817;
+    text-decoration: none;
+}
+
+.about a:hover {
+    color: #050505;
+    /* Cor a ser aplicada no hover */
+    transform: translateY(-5px);
+    /* Movimenta a letra para cima por 5 pixels no hover */
+
+}
+
+/* Copyright Styles */
+.Copyright {
+    position: relative;
+    top: 700px;
+    left: 20px;
+}
+
+footer span {
+    color: #482817;
+    text-align: center;
+    font-family: 'Timmana', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.18%;
+    letter-spacing: 0.17px;
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 620px) {
+    .nav-menu {
+        display: none;
+        
+    }
+
+    .Hamburguer-menu {
+        display: block;
+        padding: 6px;
+        font-size: calc(2em + 2vw);
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        border: none;
+    }
+    .nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        color: #050505;
+        /* Cor a ser aplicada no hover */
+        transform: translateY(-5px);
+        /* Movimenta a letra para cima por 5 pixels no hover */
+        position: absolute;
+        top: 70px;
+        /* Ajuste conforme necessário para evitar sobreposição com o cabeçalho */
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-menu a {
+        margin: 0;
+        /* Adapte conforme necessário para ajustar o espaçamento entre os itens do menu */
+    }
+    .section h1 {
+        color: #482817;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Timmana', sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80.18%;
+        letter-spacing: 0.5px;
+        margin-top: 30px;
+    }
+    #carousel-container {
+        margin-left: 0; /* Remove a margem lateral para telas menores */
+    }
+
+    .carousel-btn {
+        margin-left: 5px; /* Ajuste conforme necessário para espaçamento entre os botões */
+        top: -10px; /* Ajuste conforme necessário para subir os botões em telas menores */
+    }
+}
+
+
+/* Larger Than Mobile Styles */
+@media screen and (min-width: 621px) {
+    .Hamburguer-menu {
+        display: none;
+    }
+}
